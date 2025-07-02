@@ -41,9 +41,11 @@ export default function Navigation() {
             <a href="#projects" className="hover:text-gray-300 transition-colors">
               Project
             </a>
+            <a href="https://drive.google.com/file/d/15fgWxQIoBCedYIy72Eev_9vAITL4-B8y/view">
             <Button className="bg-white text-black hover:bg-gray-100 hover:shadow-lg transition-all duration-300">
               Resume
             </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
