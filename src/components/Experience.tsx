@@ -1,3 +1,5 @@
+import { Briefcase } from "lucide-react";
+
 export default function Experience() {
   const experiences = [
     {
@@ -25,7 +27,10 @@ export default function Experience() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950/50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16">Work Experience</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 flex items-center justify-center gap-2 text-white">
+  <Briefcase className="w-6 h-6 mr-4 mt-1 text-indigo-500" />
+  Work Experience
+</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-8 border-l-2 border-gray-800">

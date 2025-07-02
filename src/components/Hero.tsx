@@ -100,11 +100,11 @@ export default function Hero() {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <div className="space-y-6">
               {/* Greeting with subtle animation */}
-              <div className="animate-fade-in-up">
+              {/* <div className="animate-fade-in-up">
                 <span className="inline-block px-4 py-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-full text-indigo-300 text-sm font-medium mb-4">
                   👋 Welcome to my portfolio
                 </span>
-              </div>
+              </div> */}
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 Hi, I'm{' '}
@@ -115,7 +115,7 @@ export default function Hero() {
               
               {/* Animated Role Text */}
               <div className="h-16 flex items-center justify-center lg:justify-start animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-                <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 font-light">
+                <p className="text-xl sm:text-2xl lg:text-2xl font-semibold text-gray-300 ">
                   <span className="inline-block animate-fade-in-out" key={roleIndex}>
                     {roles[roleIndex]}
                   </span>

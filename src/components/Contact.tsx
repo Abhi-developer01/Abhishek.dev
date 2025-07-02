@@ -7,9 +7,10 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
-          {"Let's Connect"}
-        </h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 flex items-center justify-center gap-2 text-white">
+  <Mail className="w-6 h-6 mr-4 mt-2 text-indigo-500" />
+  Let's Connect
+</h2>
         <p className="text-gray-400 text-center mb-12 text-lg">
           {"Have a project in mind? Let's discuss how we can work together."}
         </p>

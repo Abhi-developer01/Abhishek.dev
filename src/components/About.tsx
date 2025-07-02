@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { UserCircle, LayoutGrid } from "lucide-react";
 
 export default function About() {
   const techStack = ["React", "TypeScript", "Next.js", "Tailwind CSS", "JavaScript", "Node.js", "Figma", "Git"]
@@ -6,7 +7,10 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950/50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16">About Me</h2>
+       <h2 className="text-3xl sm:text-4xl font-bold text-center mt-8 pb-4 mb-10 flex items-center justify-center gap-2 text-white">
+  <UserCircle className="w-6 h-6  mr-4 mt-1 text-indigo-500" />
+  About Me
+</h2>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
