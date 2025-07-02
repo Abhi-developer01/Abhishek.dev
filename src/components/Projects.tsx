@@ -1,0 +1,83 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { ExternalLink } from "lucide-react"
+import Image from "next/image"
+
+export default function Projects() {
+  const projects = [
+    {
+      title: "Delicious Eats",
+      description: "Modern e-commerce solution with React and Stripe integration",
+      image: "/images/1.png",
+      tags: ["React", "TypeScript", "Stripe"],
+      link: "https://delicious-eats-lime.vercel.app/",
+    },
+    {
+      title: "Task Management App",
+      description: "Collaborative task management with real-time updates",
+      image: "/images/2.png",
+      tags: ["Next.js", "Socket.io", "MongoDB"],
+      link: "https://museboard-rosy.vercel.app/",
+    },
+    {
+      title: "Weather Dashboard",
+      description: "Beautiful weather app with location-based forecasts",
+      image: "/images/3.png",
+      tags: ["React", "API", "Tailwind"],
+      link: "https://abhi-portfolio-alpha.vercel.app/",
+    },
+  ]
+
+  return (
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16">Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <a
+  key={index}
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+            <Card
+              key={index}
+              className="bg-gray-900 h-96 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/10 group cursor-pointer"
+            >
+              <CardContent className="p-0">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <img
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    width={300}
+                    height={200}
+                    className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                    <ExternalLink className="text-white" size={20} />
+                  </div>
+                </div>
+                <div className="p-6  space-y-4">
+                  <h3 className="text-xl font-semibold  text-white group-hover:text-indigo-400 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <Badge key={tagIndex} variant="outline" className="border-gray-700 text-gray-300 text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
