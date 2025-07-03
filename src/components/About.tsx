@@ -13,12 +13,12 @@ export default function About() {
 </h2>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-lg text-gray-300 leading-relaxed">
-              {"I'm a passionate frontend developer with over 4 years of experience creating beautiful, functional, and user-friendly web applications. I specialize in React, TypeScript, and modern CSS frameworks."}
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              {"My approach combines clean code practices with pixel-perfect design implementation, ensuring every project delivers exceptional user experiences across all devices and platforms."}
-            </p>
+            <p className="sm:text-lg text-sm text-gray-300 leading-relaxed text-center sm:text-left">
+  {"I'm a passionate frontend developer with over 4 years of experience creating beautiful, functional, and user-friendly web applications. I specialize in React, TypeScript, and modern CSS frameworks."}
+</p>
+<p className="sm:text-lg text-sm text-gray-300 leading-relaxed text-center sm:text-left">
+  {"My approach combines clean code practices with pixel-perfect design implementation, ensuring every project delivers exceptional user experiences across all devices and platforms."}
+</p>
             <div className="flex items-center space-x-4 pt-4">
               <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-2xl font-bold">
                 AK

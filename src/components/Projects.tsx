@@ -47,7 +47,7 @@ export default function Projects() {
 >
             <Card
               key={index}
-              className="bg-gray-900 h-96 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/10 group cursor-pointer"
+              className="bg-gray-900 sm:h-96 h-80 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/10 group cursor-pointer"
             >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
@@ -56,7 +56,7 @@ export default function Projects() {
                     alt={project.title}
                     width={300}
                     height={200}
-                    className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-100"
+                    className="w-[475px] h-44 lg:w-full lg:h-60 object-cover transition-transform duration-300 group-hover:scale-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                     <ExternalLink className="text-white" size={20} />

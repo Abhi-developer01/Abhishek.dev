@@ -106,7 +106,7 @@ export default function Hero() {
                 </span>
               </div> */}
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <h1 className="text-4xl sm:text-5xl mt-24 lg:mt-0 lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 Hi, I'm{' '}
                 <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Abhishek Kumar
@@ -124,10 +124,10 @@ export default function Hero() {
               
               {/* Typewriter Description */}
               <div className="text-lg text-gray-400 max-w-2xl min-h-[3rem] flex items-center justify-center lg:justify-start animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-                <span className="typewriter">
-                  {animatedText}
-                  <span className="animate-ping inline-block w-0.5 h-6 bg-indigo-400 ml-1"></span>
-                </span>
+                <span className="typewriter text-base  text-gray-300">
+  {animatedText}
+  <span className="animate-ping inline-block w-0.5 h-6 bg-indigo-400 ml-1"></span>
+</span>
               </div>
               
               {/* Action Buttons */}
