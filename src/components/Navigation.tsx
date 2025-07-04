@@ -58,14 +58,16 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-gray-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#about" className="block px-3 py-2 hover:text-gray-300 transition-colors">
-                Connect
+              <a href="https://github.com/Abhi-developer01" className="block px-3 py-2 hover:text-gray-300 transition-colors">
+                <Github size={20} className="text-white hover:text-gray-300 transition" />
               </a>
               <a href="#projects" className="block px-3 py-2 hover:text-gray-300 transition-colors">
-                Case Study
+                Project
               </a>
               <div className="px-3 py-2">
+                <a href="https://drive.google.com/file/d/15fgWxQIoBCedYIy72Eev_9vAITL4-B8y/view">
                 <Button className="w-full bg-white text-black hover:bg-gray-100">Resume</Button>
+                </a>
               </div>
             </div>
           </div>

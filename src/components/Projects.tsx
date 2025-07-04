@@ -8,9 +8,9 @@ export default function Projects() {
   const projects = [
     {
       title: "Delicious Eats",
-      description: "Modern e-commerce solution with React and Stripe integration",
+      description: "Smart restaurant dashboard with order management and delivery flow",
       image: "/images/1.png",
-      tags: ["React", "TypeScript", "Stripe"],
+      tags: ["Next.js", "TypeScript", "Stripe","supabase"],
       link: "https://delicious-eats-lime.vercel.app/",
     },
     {
@@ -21,8 +21,8 @@ export default function Projects() {
       link: "https://museboard-rosy.vercel.app/",
     },
     {
-      title: "Weather Dashboard",
-      description: "Beautiful weather app with location-based forecasts",
+      title: "Harmony",
+      description: "Beautiful interface for searching and discovering your favorite tracks",
       image: "/images/3.png",
       tags: ["React", "API", "Tailwind"],
       link: "https://abhi-portfolio-alpha.vercel.app/",
@@ -56,7 +56,7 @@ export default function Projects() {
                     alt={project.title}
                     width={300}
                     height={200}
-                    className="w-[475px] h-44 lg:w-full lg:h-60 object-cover transition-transform duration-300 group-hover:scale-100"
+                    className="w-[410px] h-36 lg:w-full lg:h-60 object-cover transition-transform duration-300 group-hover:scale-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                     <ExternalLink className="text-white" size={20} />
